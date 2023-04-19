@@ -1,0 +1,32 @@
+<div class="container">
+<form #articleForm="ngForm" (ngSubmit)="onSubmit(articleForm)">
+  <div class="form-group">
+    <label for="libelle">Libelle de l'article</label>
+    <input type="text" class="form-control" id="libelle"  placeholder="Libelle de l'article">
+  </div>
+  <div class="form-group">
+    <label for="marque">Marque</label>
+    <input type="text" class="form-control" id="marque" placeholder="">
+  </div>
+  <div class="form-group">
+      <label for="prix">prix</label>
+      <input type="number" class="form-control" id="prix" placeholder="">
+  </div>
+  <div class="form-group">
+      <label for="Categories">Categories</label>
+      <select class="custom-select mr-sm-8" id="caterogies">
+        <option selected>Choose...</option>
+          <option *ngFor="let category of cats" [value]="category.id">{{ category.nom_categorie }}</option>
+
+      </select>
+  </div>
+
+  <div class="form-group">
+    <label for="marque">Photo</label>
+    <input type="text" class="form-control" id="marque" placeholder="">
+  </div>
+
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
