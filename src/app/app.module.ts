@@ -30,6 +30,8 @@ import { DisqueDurComponent } from './disque-dur/disque-dur.component';
 import { UsbComponent } from './usb/usb.component';
 import { AccessoireStockageComponent } from './accessoire-stockage/accessoire-stockage.component';
 import { DisqueDurServiceService } from './disque-dur-service.service';
+import { UsersComponent } from './users/users.component';
+import { DeconnexionComponent } from './deconnexion/deconnexion.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +50,8 @@ import { DisqueDurServiceService } from './disque-dur-service.service';
     DisqueDurComponent,
     UsbComponent,
     AccessoireStockageComponent,
+    UsersComponent,
+    DeconnexionComponent,
 
 
   ],
